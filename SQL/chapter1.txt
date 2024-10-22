@@ -7,3 +7,4 @@ vụ,người ta thường hiểu cơ sở dữ liệu là một tập hợp r�
 mạng máy tính. Cơ sở dữ liệu được các chương trình ứng dụng truy xuất và khai thác trực tuyến.
 
 2. Sự cần thiết tổ chức lưu trữ dữ liệu theo lý thuyết cơ sở dữ liệu là gì?
+    dds
