@@ -1,0 +1,50 @@
+1.Cơ sở dữ liệu là gì?
+    Cơ sở dữ liệu là một tập hợp các dữ liệu có liên quan với nhau mang tính chất dùng chung. Các dữ liệu
+này sẽ được sử dụng để hỗ trợ các hoạt động của một tổ chức nào đó. Cơ sở dữ liệu có thể được xem như một
+kho dữ liệu,được định nghĩa một lần và sau đó được truy xuất bởi nhiều người dùng khác nhau.Về mặt nghiệp
+vụ,người ta thường hiểu cơ sở dữ liệu là một tập hợp rất lớn về các loại dữ liệu tác nghiệp của 1 cơ quan
+,xí nghiệp, …. Các loại dữ liệu này được lưu trữ tập trung hay phân tán trên các thiết bị lưu trữ của các
+mạng máy tính. Cơ sở dữ liệu được các chương trình ứng dụng truy xuất và khai thác trực tuyến.
+
+2. Sự cần thiết tổ chức lưu trữ dữ liệu theo lý thuyết cơ sở dữ liệu là gì?
+    + Tổ chức lưu trữ dữ liệu theo lý thuyết cơ sở dữ liệu giúp giảm bớt dư thừa dữ liệu trong lưu trữ.
+    + Cơ sở dữ liệu cũng giúp tránh được sự không nhất quán trong lưu trữ dữ liệu và bảo đảm được tính 
+toàn vẹn của dữ liệu.
+    + Chúng ta có thể triển khai đồng thời nhiều ứng dụng trên cùng một CSDL.
+    + Cơ sở dữ liệu hỗ trợ thống nhất các tiêu chuẩn, thủ tục và các biện pháp bảo vệ, an toàn dữ liệu.
+
+3. Cho ví dụ minh hoạ về dư thừa dữ liệu và không nhất quán trong lưu trữ làm mất đi tính toàn vẹn của dữ
+liệu?
+    + Dư thừa dữ liệu: Thông tin của khách hàng Nguyễn Văn A bị lặp lại ở hai dòng gây dư thừa dữ liệu. 
+Điều này làm lãng phí không gian lưu trữ và tăng nguy cơ sai sót khi cập nhật thông tin.
+    + Không nhất quán: Giả sử khách hàng Nguyễn Văn A thay đổi số điện thoại. Nếu ta chỉ cập nhật số điện
+thoại ở dòng ID 1 mà quên cập nhật ở dòng ID 3, sẽ dẫn đến tình trạng không nhất quán dữ liệu. Lúc này, 
+hệ thống sẽ lưu trữ hai số điện thoại khác nhau cho cùng một khách hàng.
+    + Mất tính toàn vẹn: Do dư thừa và không nhất quán, dữ liệu về khách hàng Nguyễn Văn A không còn đáng
+tin cậy. Ta không thể chắc chắn số điện thoại nào là chính xác, và việc thống kê số lượng sản phẩm khách 
+hàng này đã mua cũng sẽ bị sai lệch.
+
+4. Tính độc lập của dữ liệu có thể được hiểu như thế nào?
+    Tính độc lập của dữ liệu là một yếu tố quan trọng giúp hệ thống cơ sở dữ liệu trở nên linh hoạt, dễ bảo
+trì và phát triển. Nó cho phép tách biệt ứng dụng và dữ liệu, giúp giảm thiểu sự phụ thuộc và tăng cường 
+khả năng thích ứng với những thay đổi trong tương lai.
+
+5. Trình bày tổng quát kiến trúc mô hình hệ cơ sở dữ liệu 3 mức?
+    1. Mức quan sát (View Level / External Level):
+       + Đây là mức cao nhất, gần gũi nhất với người dùng.
+       + Mỗi người dùng hoặc nhóm người dùng có thể có một quan sát riêng về cơ sở dữ liệu, chỉ hiển thị
+    những dữ liệu mà họ quan tâm.
+       + Quan sát được định nghĩa dựa trên mức khái niệm, ẩn đi những thông tin không cần thiết và cung cấp
+    một giao diện đơn giản cho người dùng.
+    2. Mức khái niệm (Conceptual Level / Logical Level):
+       + Đây là mức trung gian, mô tả toàn bộ cơ sở dữ liệu theo một cách thức logic, độc lập với cách thức 
+    lưu trữ vật lý.
+       + Mức khái niệm định nghĩa các thực thể, thuộc tính và mối quan hệ giữa chúng, tạo nên một cái nhìn 
+    tổng quan về cấu trúc dữ liệu.
+    3. Mức vật lý (Internal Level / Physical Level):
+       + Đây là mức thấp nhất, mô tả cách thức dữ liệu được lưu trữ vật lý trên thiết bị lưu trữ.
+       + Mức vật lý quan tâm đến các chi tiết như kiểu file, cách tổ chức dữ liệu trên đĩa, phương pháp truy
+    cập dữ liệu...
+
+6. Khái niệm tập tin (file) có gì khác với khái niệm cơ sở dữ liệu không? Cho ví dụ minh họa?
+
